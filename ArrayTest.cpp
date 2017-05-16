@@ -39,13 +39,13 @@ static vector<string> split(string input, char search) {
  * prints credits.txt
  */
 static void credits() {
-	std::ifstream inFile ("credits.txt");
-	std::string input = "";
+	ifstream inFile ("credits.txt");
+	string input = "";
 	//inFile.open("credits.txt");
 	if (inFile.is_open()) {
 		while (getline (inFile,input)) {
-			if(input.find("Q") != std::string::npos){   //find
-				std::vector<std::string> vector = split(input, 'Q');    //split
+			if(input.find("Q") != string::npos){   //find
+				vector<string> vector = split(input, 'Q');    //split
 				int teile = vector.size();
 				for(int i = 0; i < teile; i++){
 					if(vector.at(i)=="Q") {     //only Q red
