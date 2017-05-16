@@ -24,7 +24,7 @@ using namespace std;
  * @return
  */
 template<typename T>
-T readArray(T array, size_t size){
+void readArray(T array, size_t size){
     cout << "Bitte " << size << " Werte eingeben:" << endl;
     for(size_t i = 0; i < size; i++){
         cout << "tab[" << i <<"] =" << '\t';
@@ -40,7 +40,7 @@ T readArray(T array, size_t size){
  * @return
  */
 template<typename T>
-T printArray(T array, size_t size){
+void printArray(T array, size_t size){
     cout << "[ ";
     for(size_t i = 0; i < size-1; i++){
         cout << array[i] << ", ";
@@ -75,7 +75,7 @@ T findMax(T* array, size_t size){
  * @return
  */
 template<typename T>
-T bubbleSort(T array, size_t size) {
+void bubbleSort(T array, size_t size) {
     size_t sizec = size;
     while (sizec != 0) {
         int newn = 0;
