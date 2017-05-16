@@ -4,7 +4,7 @@ RM=rm -f
 CPPFLAGS=-Wall -O2 -g -pedantic -std=c++14
 SRCS=ArrayTest.cpp ArrayTools.h
 OBJS=$(subst .cc,.cpp,.h,.hh,.o,$(SRCS))
-all: arraytest
+all: ArrayTest
 ArrayTest: ArrayTest.o
 	$(CXX) $(CPPFLAGS) -o arraytest ArrayTest.o
 ArrayTest.o: ArrayTest.cpp ArrayTools.h
