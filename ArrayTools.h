@@ -30,7 +30,7 @@ T printArray(T array, size_t size){
     for(size_t i = 0; i < size-1; i++){
         cout << array[i] << " ,";
     }
-    cout << array[size-1] << " ]";
+    cout << array[size-1] << " ]" << endl;
 }
 
 template<typename T>
