@@ -92,7 +92,7 @@ T bubbleSort(T array, size_t size) {
 /**
  * Opens all functions to test the array template
  * @tparam T
- * @param array 
+ * @param array
  * @param size
  * @return
  */
