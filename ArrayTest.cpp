@@ -4,8 +4,9 @@
  * @author Folz
  * @date   10.05.2016
  */
-
+#include <iostream>
 #include "ArrayTools.h"
+using namespace std;
 
 
 
