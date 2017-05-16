@@ -97,7 +97,7 @@ void bubbleSort(T array, size_t size) {
  * @return
  */
 template<typename T>
-T testeArray(T* array, size_t size) {
+void testeArray(T* array, size_t size) {
     readArray(array, size);
     printArray(array, size);
     findMax(array, size);
